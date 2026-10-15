@@ -1,0 +1,33 @@
+
+license="${mod_license}"
+
+[[mods]]
+
+modId="${mod_id}"
+
+version="${mod_version}"
+
+displayName="${mod_name}"
+
+authors="Valerie"
+
+description='''
+A UI component library for NeoForge mods, with FIG import, reusable screens and mouse callbacks.
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
